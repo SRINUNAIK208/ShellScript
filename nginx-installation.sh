@@ -17,12 +17,12 @@ then
 else
   echo "nginx not installed...goin to install
     dnf install nginx -y 
-    [ $? -eq 0 ]
+    if [ $? -eq 0 ]
     then
-    echo "nginx installation... success" 
+       echo "nginx installation... success" 
     else 
-    echo "nginx installation...failed
-    exit 1
+       echo "nginx installation...failed
+       exit 1
     fi 
 
 fi
