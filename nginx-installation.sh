@@ -9,14 +9,14 @@ else
   exit 1
 fi 
 
-dnf installed list nginx
+dnf list installed nginx
 
 if [ $? -eq 0 ]
 then
   echo "nginx already installed"
 else
   echo "nginx not installed...goin to install
-  dnf install nginx -y 
+    dnf install nginx -y 
     [ $? -eq 0 ]
     then
     echo "nginx installation... success" 
