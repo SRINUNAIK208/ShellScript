@@ -1,11 +1,11 @@
 #!/bin/bash 
 
-USERID=$(id)
+USERID=$(id -u)
 if [ $USERID -eq 0 ]
 then
   echo "user has root access..sucess"
 else
-  echo "ERROR: permission deanied..switch to root access"
+  echo "ERROR: permission denied..switch to root access"
   exit 1
 fi 
 
