@@ -1,7 +1,7 @@
 #!/bin/bash 
 
-id
-if [ $? -eq 0 ]
+USERID=$(id)
+if [ USERID -eq 0 ]
 then
   echo "user has root access..sucess"
 else
